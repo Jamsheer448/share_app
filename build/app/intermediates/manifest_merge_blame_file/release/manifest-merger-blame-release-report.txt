@@ -1,0 +1,233 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.share_pro"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:2:1-62
+11-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:2:18-60
+12    <!--
+13         Required to query activities that can process text, see:
+14         https://developer.android.com/training/package-visibility and
+15         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+16
+17         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+18    -->
+19    <queries>
+19-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:42:5-47:15
+20        <intent>
+20-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:43:9-46:18
+21            <action android:name="android.intent.action.PROCESS_TEXT" />
+21-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:44:13-72
+21-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:44:21-70
+22
+23            <data android:mimeType="text/plain" />
+23-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:45:13-50
+23-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:45:19-48
+24        </intent>
+25    </queries>
+26
+27    <permission
+27-->[androidx.core:core:1.13.1] C:\Users\Acer_User\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+28        android:name="com.example.share_pro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+28-->[androidx.core:core:1.13.1] C:\Users\Acer_User\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+29        android:protectionLevel="signature" />
+29-->[androidx.core:core:1.13.1] C:\Users\Acer_User\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+30
+31    <uses-permission android:name="com.example.share_pro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+31-->[androidx.core:core:1.13.1] C:\Users\Acer_User\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+31-->[androidx.core:core:1.13.1] C:\Users\Acer_User\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+32
+33    <application
+34        android:name="android.app.Application"
+34-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:5:9-42
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.13.1] C:\Users\Acer_User\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+36        android:icon="@mipmap/ic_launcher"
+36-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:6:9-43
+37        android:label="share_pro" >
+37-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:4:9-34
+38        <activity
+38-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:7:9-29:20
+39            android:name="com.example.share_pro.MainActivity"
+39-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:8:13-41
+40            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+40-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:14:13-163
+41            android:exported="true"
+41-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:9:13-36
+42            android:hardwareAccelerated="true"
+42-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:15:13-47
+43            android:launchMode="singleTop"
+43-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:10:13-43
+44            android:taskAffinity=""
+44-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:11:13-36
+45            android:theme="@style/LaunchTheme"
+45-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:13:13-47
+46            android:windowSoftInputMode="adjustResize" >
+46-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:16:13-55
+47
+48            <!--
+49                 Specifies an Android theme to apply to this Activity as soon as
+50                 the Android process has started. This theme is visible to the user
+51                 while the Flutter UI initializes. After that, this theme continues
+52                 to determine the Window background behind the Flutter UI.
+53            -->
+54            <meta-data
+54-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:21:13-24:17
+55                android:name="io.flutter.embedding.android.NormalTheme"
+55-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:22:15-70
+56                android:resource="@style/NormalTheme" />
+56-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:23:15-52
+57
+58            <intent-filter>
+58-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:25:13-28:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:26:17-68
+59-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:26:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:27:17-76
+61-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:27:27-74
+62            </intent-filter>
+63        </activity>
+64
+65        <!--
+66             Don't delete the meta-data below.
+67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+68        -->
+69        <meta-data
+69-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:33:9-35:33
+70            android:name="flutterEmbedding"
+70-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:34:13-44
+71            android:value="2" />
+71-->C:\flutter projects\share_pro\android\app\src\main\AndroidManifest.xml:35:13-30
+72        <!--
+73           Declares a provider which allows us to store files to share in
+74           '.../caches/share_plus' and grant the receiving action access
+75        -->
+76        <provider
+76-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-23:20
+77            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+77-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-77
+78            android:authorities="com.example.share_pro.flutter.share_provider"
+78-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-74
+79            android:exported="false"
+79-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+80            android:grantUriPermissions="true" >
+80-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-47
+81            <meta-data
+81-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-22:68
+82                android:name="android.support.FILE_PROVIDER_PATHS"
+82-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:21:17-67
+83                android:resource="@xml/flutter_share_file_paths" />
+83-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:22:17-65
+84        </provider>
+85        <!--
+86           This manifest declared broadcast receiver allows us to use an explicit
+87           Intent when creating a PendingItent to be informed of the user's choice
+88        -->
+89        <receiver
+89-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-34:20
+90            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+90-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-82
+91            android:exported="false" >
+91-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-37
+92            <intent-filter>
+92-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-33:29
+93                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+93-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-65
+93-->[:share_plus] C:\flutter projects\share_pro\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:25-62
+94            </intent-filter>
+95        </receiver>
+96
+97        <activity
+97-->[:url_launcher_android] C:\flutter projects\share_pro\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+98            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+98-->[:url_launcher_android] C:\flutter projects\share_pro\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+99            android:exported="false"
+99-->[:url_launcher_android] C:\flutter projects\share_pro\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+100            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+100-->[:url_launcher_android] C:\flutter projects\share_pro\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+101
+102        <uses-library
+102-->[androidx.window:window:1.2.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+103            android:name="androidx.window.extensions"
+103-->[androidx.window:window:1.2.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+104            android:required="false" />
+104-->[androidx.window:window:1.2.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+105        <uses-library
+105-->[androidx.window:window:1.2.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+106            android:name="androidx.window.sidecar"
+106-->[androidx.window:window:1.2.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+107            android:required="false" />
+107-->[androidx.window:window:1.2.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+108
+109        <provider
+109-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d674cd90e13def17f77b3f8010d35e09\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+110            android:name="androidx.startup.InitializationProvider"
+110-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d674cd90e13def17f77b3f8010d35e09\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+111            android:authorities="com.example.share_pro.androidx-startup"
+111-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d674cd90e13def17f77b3f8010d35e09\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+112            android:exported="false" >
+112-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d674cd90e13def17f77b3f8010d35e09\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+113            <meta-data
+113-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d674cd90e13def17f77b3f8010d35e09\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+114                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+114-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d674cd90e13def17f77b3f8010d35e09\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+115                android:value="androidx.startup" />
+115-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Acer_User\.gradle\caches\transforms-3\d674cd90e13def17f77b3f8010d35e09\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+116            <meta-data
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+118                android:value="androidx.startup" />
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+119        </provider>
+120
+121        <receiver
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+122            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+123            android:directBootAware="false"
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+124            android:enabled="true"
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+125            android:exported="true"
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+126            android:permission="android.permission.DUMP" >
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+127            <intent-filter>
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+128                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+129            </intent-filter>
+130            <intent-filter>
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+131                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+132            </intent-filter>
+133            <intent-filter>
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+134                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+135            </intent-filter>
+136            <intent-filter>
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+137                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Acer_User\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+138            </intent-filter>
+139        </receiver>
+140    </application>
+141
+142</manifest>
